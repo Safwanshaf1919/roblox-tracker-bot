@@ -5,9 +5,12 @@ import csv
 from datetime import datetime, timedelta
 import asyncio
 import os
+from keep_alive import keep_alive
+
 
 # ⚠️ Replace this with your real token before deploying
 
+keep_alive()
 TOKEN = os.getenv("DISCORD_TOKEN")
 
 USERNAME = "shinshinshina04"
