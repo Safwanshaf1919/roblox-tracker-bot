@@ -4,9 +4,12 @@ import time
 import csv
 from datetime import datetime, timedelta
 import asyncio
+import os
 
 # ⚠️ Replace this with your real token before deploying
-TOKEN = "DISCORD_TOKEN"
+
+TOKEN = os.getenv("DISCORD_TOKEN")
+
 USERNAME = "shinshinshina04"
 INTERVAL_SECONDS = 120
 DAILY_LOG_FILE = f"roblox_presence_{datetime.now().strftime('%Y-%m-%d')}.csv"
